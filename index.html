@@ -1448,20 +1448,24 @@
 
         <!-- Project 1 -->
         <div class="project-card fade-up">
-          <div class="project-duration">Feb 2026 – Mar 2026</div>
-          <h3 class="project-title">Employee Record Management System</h3>
+          <div class="project-duration">2024</div>
+          <h3 class="project-title">Payzee — Crypto-to-Fiat Payment Bridge</h3>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Django</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">React 18</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">TailwindCSS</span>
+            <span class="tech-tag">Move (Sui Blockchain)</span>
+            <span class="tech-tag">Lithic API</span>
+            <span class="tech-tag">Chrome Extension MV3</span>
           </div>
           <div class="project-desc">
             <ul>
-              <li>Dynamic web app to manage employee records with full CRUD operations</li>
-              <li>User registration, login, and personalized dashboard showing profiles, experience, and skills</li>
-              <li>Secure authentication and efficient database handling with Django ORM</li>
+              <li>Built a crypto-to-fiat payment bridge allowing users to pay at any online checkout using USDC — deposit crypto into a Sui blockchain escrow contract and get an auto-generated virtual Visa card</li>
+              <li>Wrote a Move smart contract on Sui testnet handling USDC escrow; backend verifies transactions on-chain via Sui RPC and extracts deposit amount in real time</li>
+              <li>Integrated Lithic API to generate single-use virtual Visa cards with a 5% fee buffer, and built a Chrome extension (Manifest V3) that auto-detects checkout pages and fills card details automatically</li>
+              <li>Fallback copy-paste panel handles cross-origin iframe restrictions at merchant checkouts</li>
             </ul>
           </div>
           <a href="https://github.com/Aditya2kk" target="_blank" rel="noopener" class="project-link">
@@ -1474,16 +1478,24 @@
 
         <!-- Project 2 -->
         <div class="project-card fade-up">
-          <div class="project-duration">Jun 2025 – Aug 2025</div>
-          <h3 class="project-title">Global Health Statistics Dashboard</h3>
+          <div class="project-duration">2024</div>
+          <h3 class="project-title">ListlyAI — AI-Powered Real Estate SaaS</h3>
           <div class="project-tech">
-            <span class="tech-tag">Microsoft Power BI</span>
+            <span class="tech-tag">Next.js 14</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">TailwindCSS</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Claude AI</span>
+            <span class="tech-tag">Razorpay</span>
+            <span class="tech-tag">Resend</span>
+            <span class="tech-tag">Vercel</span>
           </div>
           <div class="project-desc">
             <ul>
-              <li>Interactive dashboard analyzing global health trends across regions and demographics</li>
-              <li>Processed 1M+ records tracking KPIs: disease cases, mortality rates, healthcare access</li>
-              <li>Delivered actionable insights using charts, maps, and dynamic filters</li>
+              <li>Built a production-ready SaaS for real estate agents to generate listing copy, outreach emails, WhatsApp messages, and social captions in seconds using Claude AI via Vercel AI SDK</li>
+              <li>Implemented multi-language support (English, Spanish, French, German, Hindi, Italian, Portuguese) with multiple tone options (Professional, Luxury, Friendly, Urgent)</li>
+              <li>Integrated Razorpay subscription system with 4 tiers (Free, Starter, Pro, Agency) — Agency plan includes team support for up to 10 members, bulk CSV upload, and API access for CRM integrations</li>
+              <li>Full auth and database via Supabase with Next.js API routes; deployed on Vercel with Resend for transactional emails</li>
             </ul>
           </div>
           <a href="https://github.com/Aditya2kk" target="_blank" rel="noopener" class="project-link">
@@ -1772,8 +1784,9 @@
       const el = document.getElementById('typewriter');
       const roles = [
         'Full Stack Developer',
-        'Cloud Enthusiast',
+        'Data Science',
         'Blockchain Developer',
+        'AI/ML Integrator',
         'Problem Solver'
       ];
       let ri = 0, ci = 0, deleting = false;
